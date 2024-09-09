@@ -1,61 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Musica Brasileira</title>
-    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <header><h1>Generos Musicais Nacionais</h1></header>
+    <header>
+      <h1>Generos Musicais Brasileiros</h1>
+    </header>
     <main>
       <section>
-        <input type="text" placeholder="Digite o nome do genero" /><button>
-          Pesquisar
-        </button>
+        <input
+          type="text"
+          placeholder="Digite o nome do gênero"
+          id="campo-pesquisa"
+        />
+        <button onclick="pesquisar()">Pesquisar</button>
       </section>
-      <section class="resultados-pesquisa">
-        <div class="item-resultado">
-          <h2><a href="#" target="_blank">Samba</a></h2>
-          <p class="descricao-meta">
-            Samba, um dos maiores ícones da cultura brasileira, é um gênero
-            musical que nasceu nas comunidades afro-brasileiras do Rio de
-            Janeiro no início do século XX.Do morro para os palcos do mundo!
-          </p>
-          <a href="https://pt.wikipedia.org/wiki/Samba" target="_blank"
-            >Saiba Mais</a
-          >
-        </div>
-
-        <div class="item-resultado">
-          <h2><a href="#" target="_blank">Funk Carioca</a></h2>
-          <p class="descricao-meta">
-            O Funk Carioca, ou simplesmente Funk, é um gênero musical oriundo
-            das favelas do estado do Rio de Janeiro. Mistura elementos do hip
-            hop com ritmos brasileiros.
-          </p>
-          <a href="https://pt.wikipedia.org/wiki/Funk_carioca" target="_blank"
-            >Saiba Mais</a
-          >
-        </div>
-
-        <div class="item-resultado">
-          <h2><a href="#" target="_blank">Forró</a></h2>
-          <p class="descricao-meta">
-            O Forró é um ritmo musical popular do Nordeste brasileiro, conhecido
-            por suas letras alegres e danças animadas. É caracterizado pela
-            presença de instrumentos como acordeon, triângulo e zabumba.
-          </p>
-          <a href="https://pt.wikipedia.org/wiki/Forr%C3%B3" target="_blank"
-            >Saiba Mais</a
-          >
-        </div>
-      </section>
+      <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
     </main>
     <footer>
-      <p>2024 - Generos Musicais. Todos os direitos reservados ®</p>
-      <p>Entre em contato pelo Whatsapp + 55 (49) 9 9981 4971</p>
+      <p>2024 - Gêneros do Brasil. Todos os direitos reservados</p>
+      <p>Entre em contato pelo email: ritmosbrasileiros@gmail.com</p>
     </footer>
-    <script src="./app.js"></script>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
